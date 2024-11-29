@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bqyflpx1vdt5s"]
+
+[ext_resource type="Shader" path="res://mandelbrot.gdshader" id="1_7lglv"]
+
+[sub_resource type="Gradient" id="Gradient_0bwqx"]
+offsets = PackedFloat32Array(0, 0.12349, 1)
+colors = PackedColorArray(0, 0.520137, 0.567395, 1, 0, 1, 0.916667, 1, 0.73, 1, 0.739, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_r11r7"]
+gradient = SubResource("Gradient_0bwqx")
+
+[resource]
+shader = ExtResource("1_7lglv")
+shader_parameter/gradient = SubResource("GradientTexture1D_r11r7")
